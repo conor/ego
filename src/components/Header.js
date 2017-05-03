@@ -31,7 +31,7 @@ const Header = () => (
 
       a {
         display: block;
-        width: 100%;
+        width: 50%;
         max-width: 9.6875rem;
       }
 

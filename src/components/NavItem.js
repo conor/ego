@@ -11,9 +11,8 @@ import { brandBlack, brandRed, brandWhite } from '../theme/colors'
 
 const NavItem = ({ name, href }) => (
   <li>
-    <a href={href}>
-      {name}
-    </a>
+    {/* This is a hack for react-snapshot */}
+    <a data-href={href}>{name}</a>
 
     <style jsx>{`
       li {
