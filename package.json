@@ -46,10 +46,12 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "serve": "^5.1.4",
     "styled-jsx": "^0.5.7"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "serve -s ./build",
+    "dev": "node scripts/start.js",
     "build": "node scripts/build.js && react-snapshot",
     "test": "node scripts/test.js --env=jsdom"
   },
