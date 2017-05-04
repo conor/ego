@@ -19,15 +19,17 @@ const Work = () => (
   <section id="work" className="work">
     <h1 className="work-title">Work</h1>
 
-    <ul className="projects">
+    <div className="projects">
       {projects.map((project, idx) => <Project key={idx} {...project} />)}
-    </ul>
+    </div>
 
     <style jsx>{`
       .work {
         background: ${brandRed};
         padding: ${spacingExtraLarge};
         padding-bottom: ${spacingExtraExtraLarge};
+        animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.5s;
       }
       .work-title {
         font-size: ${f2};
@@ -42,6 +44,16 @@ const Work = () => (
         list-style: none;
         display: flex;
         justify-content: space-between;
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     `}</style>
   </section>
