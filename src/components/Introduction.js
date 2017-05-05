@@ -34,6 +34,8 @@ const Introduction = () => (
       @media ${largeAndUp} {
         h1 {
           font-size: ${f1};
+          width: 56.5%;
+          display: block;
         }
         section {
           padding: ${spacingExtraLarge};
