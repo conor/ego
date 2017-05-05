@@ -19,11 +19,7 @@ const Project = ({ name, tags, logo, link }) => (
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        padding-right: ${spacingLarge};
         flex-basis: 100%;
-      }
-      .project:nth-child(3n) {
-        padding-right: 0;
       }
       .project:hover {
         opacity: 0.7;
@@ -50,6 +46,10 @@ const Project = ({ name, tags, logo, link }) => (
       @media ${mediumAndUp} {
         .project {
           flex-basis: auto;
+          padding-right: ${spacingLarge};
+        }
+        .project:nth-child(3n) {
+          padding-right: 0;
         }
       }
     `}</style>

@@ -15,7 +15,7 @@ import {
   spacingExtraLarge,
   spacingExtraExtraLarge
 } from '../theme/spacing'
-import { f2, bold } from '../theme/typography'
+import { f2, f3, bold } from '../theme/typography'
 
 const Work = () => (
   <section id="work" className="work">
@@ -42,16 +42,20 @@ const Work = () => (
         animation-delay: 0.5s;
       }
       .work-title {
-        font-size: ${f2};
+        font-size: ${f3};
         font-weight: ${bold};
         color: ${brandWhite};
         margin: ${spacingNone};
-        padding-bottom: ${spacingExtraLarge};
+        padding-bottom: ${spacingLarge};
       }
       @media ${largeAndUp} {
         .work {
           padding: ${spacingExtraLarge};
           padding-bottom: ${spacingExtraExtraLarge};
+        }
+        .work-title {
+          font-size: ${f2};
+          padding-bottom: ${spacingExtraLarge};
         }
       }
       @keyframes slide-in-bottom {
