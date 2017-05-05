@@ -6,17 +6,20 @@ const projects = [
   {
     name: 'Foundation for a Just Society',
     tags: ['Web design', 'Custom CMS', 'Rails', 'VueJS'],
-    logo: fjsLogo
+    logo: fjsLogo,
+    link: 'https://fjs.org'
   },
   {
     name: 'Makewell',
     tags: ['Web design', 'Static CMS', 'SSR ReactJS'],
-    logo: makewellLogo
+    logo: makewellLogo,
+    link: 'https://makewellmade.com'
   },
   {
     name: 'Chronogolf',
     tags: ['Web design', 'CTO', 'Rails', 'AngularJS'],
-    logo: chronoLogo
+    logo: chronoLogo,
+    link: 'https://www.chronogolf.ca'
   }
 ]
 

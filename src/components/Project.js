@@ -6,8 +6,8 @@ import { f4, f5, regular } from '../theme/typography'
 import { spacingExtraLarge, spacingLarge } from '../theme/spacing'
 import { brandWhite } from '../theme/colors'
 
-const Project = ({ name, tags, logo }) => (
-  <a href="http://makewellmade.com" className="project">
+const Project = ({ name, tags, logo, link }) => (
+  <a href={link} target="_blank" className="project">
     <h2 className="name">{name}</h2>
     <h3 className="tags">{tags.join(', ')}</h3>
     <div className="logo-container">
