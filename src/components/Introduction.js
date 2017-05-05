@@ -1,8 +1,9 @@
 import React from 'react'
 
 // Theme
-import { spacingExtraLarge, spacingNone } from '../theme/spacing'
-import { f1, regular } from '../theme/typography'
+import { spacingExtraLarge, spacingLarge, spacingNone } from '../theme/spacing'
+import { f1, f3, regular } from '../theme/typography'
+import { largeAndUp } from '../theme/screenSizes'
 
 const Introduction = () => (
   <section>
@@ -14,20 +15,29 @@ const Introduction = () => (
       &
       {' '}
       <strong>technology</strong>
-      <br />
+      {' '}
       in multiple startups, and even an agency
     </h1>
 
     <style jsx>{`
       section {
-        padding: ${spacingExtraLarge};
+        padding: ${spacingLarge};
         padding-top: ${spacingNone};
       }
       h1 {
-        font-size: ${f1};
+        font-size: ${f3};
         font-weight: ${regular};
         margin: ${spacingNone};
         animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+
+      @media ${largeAndUp} {
+        h1 {
+          font-size: ${f1};
+        }
+        section {
+          padding: ${spacingExtraLarge};
+        }
       }
 
       @keyframes slide-in-left {

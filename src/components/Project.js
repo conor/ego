@@ -1,7 +1,9 @@
 import React from 'react'
 
 // Theme
+import { mediumAndUp } from '../theme/screenSizes'
 import { f4, f5, regular } from '../theme/typography'
+import { spacingExtraLarge, spacingLarge } from '../theme/spacing'
 import { brandWhite } from '../theme/colors'
 
 const Project = ({ name, tags, logo }) => (
@@ -17,6 +19,11 @@ const Project = ({ name, tags, logo }) => (
         display: flex;
         flex-direction: column;
         text-decoration: none;
+        padding-right: ${spacingLarge};
+        flex-basis: 100%;
+      }
+      .project:nth-child(3n) {
+        padding-right: 0;
       }
       .project:hover {
         opacity: 0.7;
@@ -38,7 +45,12 @@ const Project = ({ name, tags, logo }) => (
         justify-content: center;
       }
       .logo {
-        margin: 32px;
+        margin: ${spacingExtraLarge};
+      }
+      @media ${mediumAndUp} {
+        .project {
+          flex-basis: auto;
+        }
       }
     `}</style>
   </a>

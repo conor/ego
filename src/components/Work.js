@@ -8,9 +8,11 @@ import projects from '../content/projects'
 
 // Theme
 import { brandRed, brandWhite } from '../theme/colors'
+import { largeAndUp } from '../theme/screenSizes'
 import {
-  spacingExtraLarge,
   spacingNone,
+  spacingLarge,
+  spacingExtraLarge,
   spacingExtraExtraLarge
 } from '../theme/spacing'
 import { f2, bold } from '../theme/typography'
@@ -24,10 +26,18 @@ const Work = () => (
     </div>
 
     <style jsx>{`
+      .projects {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
       .work {
         background: ${brandRed};
-        padding: ${spacingExtraLarge};
-        padding-bottom: ${spacingExtraExtraLarge};
+        padding: ${spacingLarge};
+        padding-bottom: ${spacingExtraLarge};
         animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation-delay: 0.5s;
       }
@@ -38,12 +48,11 @@ const Work = () => (
         margin: ${spacingNone};
         padding-bottom: ${spacingExtraLarge};
       }
-      .projects {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
+      @media ${largeAndUp} {
+        .work {
+          padding: ${spacingExtraLarge};
+          padding-bottom: ${spacingExtraExtraLarge};
+        }
       }
       @keyframes slide-in-bottom {
         0% {
