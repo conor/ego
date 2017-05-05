@@ -22,6 +22,7 @@ const NavItem = ({ name, href }) => (
         margin-right: ${spacingNone};
       }
       a {
+        cursor: pointer;
         color: ${brandBlack};
         font-weight: 700;
         font-size: 1.25rem;
