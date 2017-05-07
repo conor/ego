@@ -20,24 +20,24 @@ export default class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/static/favicon/apple-touch-icon.png"
+            href="/static/favicons/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/favicon/favicon-32x32.png"
+            href="/static/favicons/favicons-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/static/favicon/favicon-16x16.png"
+            href="/static/favicons/favicons-16x16.png"
           />
-          <link rel="manifest" href="/static/favicon/manifest.json" />
+          <link rel="manifest" href="/static/favicons/manifest.json" />
           <link
             rel="mask-icon"
-            href="/static/favicon/safari-pinned-tab.svg"
+            href="/static/favicons/safari-pinned-tab.svg"
             color="#e34235"
           />
           <meta name="theme-color" content="#ffffff" />
