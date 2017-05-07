@@ -1,8 +1,6 @@
 // Images
-import picture from '../images/profile.jpg'
-
 const Profile = {
-  picture: picture,
+  picture: '/static/profile.jpg',
   pictureAlt: 'Picture of Conor Wade, the author of the site.',
   bio: `
     <p>I’m a designer / developer who loves to travel. I have 9 year’s experience mostly in the startup world. I believe in strong cross-polination between design & adevelopment. Nothing makes a team more productive than designers and developers working closely to push a product forward.</p>
