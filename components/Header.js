@@ -15,7 +15,7 @@ import { largeAndUp } from '../theme/screenSizes'
 
 const Header = () => (
   <header>
-    <a href="/">
+    <a href='/'>
       <Logo />
     </a>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Theme
 import {
@@ -48,5 +49,10 @@ const NavItem = ({ name, href }) => (
     `}</style>
   </li>
 )
+
+NavItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired
+}
 
 export default NavItem

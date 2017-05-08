@@ -28,7 +28,7 @@ const Travel = () => (
         />
         <animate
           xlinkHref='#back'
-          ttributeType='CSS'
+          attributeType='CSS'
           attributeName='opacity'
           from='0.7'
           to='0'
@@ -51,7 +51,7 @@ const Travel = () => (
         />
         <animate
           xlinkHref='#back2'
-          ttributeType='CSS'
+          attributeType='CSS'
           attributeName='opacity'
           from='0.7'
           to='0'

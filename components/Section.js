@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Theme
 import { spacingLarge, spacingExtraLarge } from '../theme/spacing'
@@ -6,15 +7,19 @@ import { mediumAndUp, largeAndUp } from '../theme/screenSizes'
 import { f2, f3 } from '../theme/typography'
 import { brandWhite, brandRed } from '../theme/colors'
 
-// Monkeypatch String
-String.prototype.capitalize = function () {
-  return this.charAt(0).toUpperCase() + this.slice(1)
+const capitalize = str => {
+  if (typeof str === 'undefined') return
+
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
 }
 
 const Section = ({ name, color, children, animationDelay }) => {
   return (
     <section id={name} className={color} style={{ animationDelay }}>
-      <h1 className='title'>{name.capitalize()}</h1>
+      <h1 className='title'>{capitalize(name)}</h1>
       {children}
 
       <style jsx>{`
@@ -61,6 +66,13 @@ const Section = ({ name, color, children, animationDelay }) => {
       `}</style>
     </section>
   )
+}
+
+Section.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
+  animationDelay: PropTypes.string.isRequired
 }
 
 export default Section

@@ -7,6 +7,7 @@ import Work from '../components/Work'
 import About from '../components/About'
 import Section from '../components/Section'
 import Travel from '../components/Travel'
+import Footer from '../components/Footer'
 
 // Theme
 
@@ -23,6 +24,7 @@ const Index = () => (
     <Section name='travel' color='red' animationDelay='0.9s'>
       <Travel />
     </Section>
+    <Footer />
   </div>
 )
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Theme
 import { mediumAndUp } from '../theme/screenSizes'
@@ -7,11 +8,11 @@ import { spacingExtraLarge, spacingLarge } from '../theme/spacing'
 import { brandWhite } from '../theme/colors'
 
 const Project = ({ name, tags, logo, link }) => (
-  <a href={link} target="_blank" className="project">
-    <h2 className="name">{name}</h2>
-    <h3 className="tags">{tags.join(', ')}</h3>
-    <div className="logo-container">
-      <img src={logo} className="logo" alt={`Logo for the ${name} project.`} />
+  <a href={link} target='_blank' className='project'>
+    <h2 className='name'>{name}</h2>
+    <h3 className='tags'>{tags.join(', ')}</h3>
+    <div className='logo-container'>
+      <img src={logo} className='logo' alt={`Logo for the ${name} project.`} />
     </div>
 
     <style jsx>{`
@@ -55,5 +56,12 @@ const Project = ({ name, tags, logo, link }) => (
     `}</style>
   </a>
 )
+
+Project.propTypes = {
+  name: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  logo: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+}
 
 export default Project
