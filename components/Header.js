@@ -15,20 +15,25 @@ import { largeAndUp } from '../theme/screenSizes'
 
 const Header = () => (
   <header>
-    <a href='/'>
-      <Logo />
-    </a>
+    <div className='max-width-container'>
+      <a href='/'>
+        <Logo />
+      </a>
 
-    <Nav />
+      <Nav />
+    </div>
 
     <style jsx>{`
       header {
-        display: flex;
-        justify-content: space-between;
         padding: ${spacingLarge};
         padding-bottom: ${spacingExtraExtraLarge};
       }
-
+      .max-width-container {
+        max-width: 1550px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
       a {
         display: block;
         width: 50%;
@@ -36,12 +41,10 @@ const Header = () => (
         animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation-delay: 0.5s;
       }
-
       @media ${largeAndUp} {
         a {
           max-width: 12.125rem;
         }
-
         header {
           padding: ${spacingExtraLarge};
           padding-bottom: ${spacingExtraExtraExtraLarge};

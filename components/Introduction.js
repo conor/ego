@@ -7,22 +7,28 @@ import { largeAndUp } from '../theme/screenSizes'
 
 const Introduction = () => (
   <section>
-    <h1>
-      I have led both
-      {' '}
-      <strong>design</strong>
-      {' '}
-      &
-      {' '}
-      <strong>technology</strong>
-      {' '}
-      in multiple startups, and even an agency
-    </h1>
+    <div className='max-width-container'>
+      <h1>
+        I have led both
+        {' '}
+        <strong>design</strong>
+        {' '}
+        &
+        {' '}
+        <strong>technology</strong>
+        {' '}
+        in multiple startups, and even an agency
+      </h1>
+    </div>
 
     <style jsx>{`
       section {
         padding: ${spacingLarge};
         padding-top: ${spacingNone};
+      }
+      .max-width-container {
+        max-width: 1550px;
+        margin: 0 auto;
       }
       h1 {
         font-size: ${f3};

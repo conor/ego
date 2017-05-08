@@ -19,13 +19,19 @@ const capitalize = str => {
 const Section = ({ name, color, children, animationDelay }) => {
   return (
     <section id={name} className={color} style={{ animationDelay }}>
-      <h1 className='title'>{capitalize(name)}</h1>
-      {children}
+      <div className='max-width-container'>
+        <h1 className='title'>{capitalize(name)}</h1>
+        {children}
+      </div>
 
       <style jsx>{`
         section {
           padding: ${spacingLarge};
           animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        .max-width-container {
+          max-width: 1550px;
+          margin: 0 auto;
         }
         section.red {
           background: ${brandRed};
