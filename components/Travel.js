@@ -4,7 +4,7 @@ import React from 'react'
 import WorldDots from './WorldDots'
 
 // Theme
-import { brandBlue, brandWhite } from '../theme/colors'
+import { brandWhite } from '../theme/colors'
 
 const Travel = () => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1309 643'>
@@ -18,9 +18,9 @@ const Travel = () => (
         <animate
           xlinkHref='#back'
           attributeName='r'
-          from='5'
-          to='9'
-          dur='1s'
+          from='6'
+          to='15'
+          dur='3s'
           begin='0s'
           repeatCount='indefinite'
           fill='freeze'
@@ -32,14 +32,38 @@ const Travel = () => (
           attributeName='opacity'
           from='0.7'
           to='0'
-          dur='1s'
+          dur='3s'
           begin='0s'
           repeatCount='indefinite'
           fill='freeze'
           id='circ-anim'
         />
-        <circle cx='6.9' cy='13.8' r='4' id='front' className='vancouver' />
-        <circle cx='6.9' cy='13.8' r='5' id='back' strokeWidth='0.333' />
+        <animate
+          xlinkHref='#back2'
+          attributeName='r'
+          from='6'
+          to='15'
+          dur='3s'
+          begin='1s'
+          repeatCount='indefinite'
+          fill='freeze'
+          id='circ-anim'
+        />
+        <animate
+          xlinkHref='#back2'
+          ttributeType='CSS'
+          attributeName='opacity'
+          from='0.7'
+          to='0'
+          dur='3s'
+          begin='1s'
+          repeatCount='indefinite'
+          fill='freeze'
+          id='circ-anim'
+        />
+        <circle cx='6.9' cy='13.8' r='5' id='front' className='vancouver' />
+        <circle cx='6.9' cy='13.8' r='6' id='back' strokeWidth='0.333' />
+        <circle cx='6.9' cy='13.8' r='6' id='back2' strokeWidth='0.333' />
         <circle cx='989.3' cy='63.6' opacity='.8' r='4' />
         <circle cx='884.3' cy='138.2' opacity='.8' r='4' />
         <circle cx='864' cy='183.2' opacity='.8' r='4' />
