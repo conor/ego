@@ -21,7 +21,7 @@ const Index = () => (
     <Section name='about' color='white' animationDelay='0.7s'>
       <About />
     </Section>
-    <Section name='travel' color='red' animationDelay='0.9s'>
+    <Section name='travels' color='red' animationDelay='0.9s'>
       <Travel />
     </Section>
     <Footer />
