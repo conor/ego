@@ -34,7 +34,7 @@ const Footer = () => (
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-between;
-        width: 1550px;
+        max-width: 1550px;
         margin: 0 auto;
       }
       p {
