@@ -9,19 +9,17 @@ import Section from '../components/Section'
 import Travel from '../components/Travel'
 import Footer from '../components/Footer'
 
-// Theme
-
 const Index = () => (
   <div className='app'>
     <Header />
     <Introduction />
-    <Section name='work' color='red' animationDelay='0.5s'>
+    <Section name='work' color='red' animationDelay='700'>
       <Work />
     </Section>
-    <Section name='about' color='white' animationDelay='0.7s'>
+    <Section name='about' color='white' animationDelay='200'>
       <About />
     </Section>
-    <Section name='travels' color='red' animationDelay='0.9s'>
+    <Section name='travels' color='red' animationDelay='200'>
       <Travel />
     </Section>
     <Footer />

@@ -10,7 +10,12 @@ import navItems from '../content/navigation'
 import { largeAndUp } from '../theme/screenSizes'
 
 const Nav = () => (
-  <nav>
+  <nav
+    data-aos='zoom-out-down'
+    data-aos-once='true'
+    data-aos-delay='300'
+    data-aos-easing='ease-in-sine'
+  >
     <ul>
       {navItems.map((item, idx) => <NavItem key={idx} {...item} />)}
     </ul>
@@ -18,8 +23,6 @@ const Nav = () => (
     <style jsx>{`
       nav {
         display: none;
-        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-delay: 0.4s;
       }
       ul {
         list-style: none;
@@ -31,17 +34,6 @@ const Nav = () => (
       @media ${largeAndUp} {
         nav {
           display: block;
-        }
-      }
-
-      @keyframes slide-in-right {
-        0% {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
         }
       }
     `}</style>

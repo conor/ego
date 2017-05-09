@@ -11,7 +11,12 @@ import { brandBlue, brandWhite } from '../theme/colors'
 import { largeAndUp } from '../theme/screenSizes'
 
 const Footer = () => (
-  <footer>
+  <footer
+    data-aos='zoom-out-up'
+    data-aos-once='true'
+    data-aos-delay='200'
+    data-aos-easing='ease-in-sine'
+  >
     <div className='footer-container'>
       <p>© 2017 CONOR WADE. ALL RIGHTS RESERVED</p>
       <img src='/static/mark.svg' alt='Logo for Conor Wade' />
@@ -25,8 +30,6 @@ const Footer = () => (
     </div>
     <style jsx>{`
       footer {
-        animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-delay: 1.3s;
         padding: ${spacingExtraLarge} ${spacingLarge};
       }
       .footer-container {
@@ -62,16 +65,6 @@ const Footer = () => (
         }
         p, img {
           flex-basis: auto;
-        }
-      }
-      @keyframes slide-in-bottom {
-        0% {
-          transform: translateY(100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
         }
       }
     `}</style>

@@ -8,7 +8,12 @@ import { largeAndUp } from '../theme/screenSizes'
 const Introduction = () => (
   <section>
     <div className='max-width-container'>
-      <h1>
+      <h1
+        data-aos='zoom-out-right'
+        data-aos-delay='500'
+        data-aos-once='true'
+        data-aos-easing='ease-in-sine'
+      >
         I have led both
         {' '}
         <strong>design</strong>
@@ -34,7 +39,6 @@ const Introduction = () => (
         font-size: ${f3};
         font-weight: ${regular};
         margin: ${spacingNone};
-        animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       }
 
       @media ${largeAndUp} {
@@ -45,17 +49,6 @@ const Introduction = () => (
         }
         section {
           padding: ${spacingExtraLarge};
-        }
-      }
-
-      @keyframes slide-in-left {
-        0% {
-          transform: translateX(-1000px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
         }
       }
     `}</style>
