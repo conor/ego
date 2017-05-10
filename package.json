@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "now": {
+    "name": "ego",
+    "alias": [
+      "conorwade.com",
+      "www.conorwade.com",
+      "conorwade.xyz",
+      "www.conorwade.xyz"
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
