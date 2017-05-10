@@ -23,8 +23,8 @@ const Footer = () => (
       <p>
         Currently in
         {' '}
-        <a href='https://www.google.com/search?q=vancouver'>
-          Vancouver, Canada
+        <a href='https://www.google.com/search?q=london'>
+          London, England
         </a>
       </p>
     </div>
