@@ -22,6 +22,8 @@ const Header = () => (
         data-aos-delay='100'
         data-aos-once='true'
         data-aos-easing='ease-in-sine'
+        title='Link to conorwade.com homepage'
+        tabIndex='1'
       >
         <Logo />
       </a>

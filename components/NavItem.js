@@ -29,7 +29,7 @@ export default class NavItem extends Component {
     const { name } = this.props
     return (
       <li>
-        <a onClick={this.scrollToSection}>{name}</a>
+        <a role='link' tabIndex='2' onClick={this.scrollToSection}>{name}</a>
 
         <style jsx>{`
           li {

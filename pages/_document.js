@@ -12,12 +12,12 @@ export default class MyDocument extends Document {
 
   render () {
     return (
-      <html>
+      <html lang='en'>
         <Head>
           <meta charSet='utf-8' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-          <style media='screen'>{`body{margin:0;font-family:Avenir Next,sans-serif;font-weight:400;font-size:1rem;color:#153431;line-height:1.5;}h1,h2,h3,h4,h5,h6{line-height:1.25;}`}</style>
+          <style media='screen'>{`body{width:100%;overflow-x:hidden;margin:0;font-family:Avenir Next,sans-serif;font-weight:400;font-size:1rem;color:#153431;line-height:1.5;}h1,h2,h3,h4,h5,h6{line-height:1.25;}`}</style>
 
           <link
             rel='apple-touch-icon'

@@ -14,15 +14,17 @@ const Introduction = () => (
         data-aos-once='true'
         data-aos-easing='ease-in-sine'
       >
-        I have led both
+        I am a
         {' '}
-        <strong>design</strong>
+        <strong>designer/developer</strong>
+        {' '}
+        who turn's business idea's into
+        {' '}
+        <strong>product's</strong>
         {' '}
         &
         {' '}
-        <strong>technology</strong>
-        {' '}
-        in multiple startups, and even an agency
+        <strong>service's</strong>
       </h1>
     </div>
 
@@ -44,7 +46,7 @@ const Introduction = () => (
       @media ${largeAndUp} {
         h1 {
           font-size: ${f1};
-          width: 56.5%;
+          width: 60%;
           display: block;
         }
         section {

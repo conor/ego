@@ -20,7 +20,7 @@ const Travel = () => (
           begin='0s'
           repeatCount='indefinite'
           fill='freeze'
-          id='circ-anim'
+          id='circ-anim-radius-1'
         />
         <animate
           xlinkHref='#back'
@@ -32,7 +32,7 @@ const Travel = () => (
           begin='0s'
           repeatCount='indefinite'
           fill='freeze'
-          id='circ-anim'
+          id='circ-anim-opacity-1'
         />
         <animate
           xlinkHref='#back2'
@@ -43,7 +43,7 @@ const Travel = () => (
           begin='1s'
           repeatCount='indefinite'
           fill='freeze'
-          id='circ-anim'
+          id='circ-anim-radius-2'
         />
         <animate
           xlinkHref='#back2'
@@ -55,7 +55,7 @@ const Travel = () => (
           begin='1s'
           repeatCount='indefinite'
           fill='freeze'
-          id='circ-anim'
+          id='circ-anim-opacity-2'
         />
         <circle cx='435.2' cy='6.9' opacity='.8' r='4' />
         <circle
