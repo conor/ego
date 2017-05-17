@@ -30,7 +30,7 @@ const Footer = () => (
     </div>
     <style jsx>{`
       footer {
-        padding: ${spacingExtraLarge} ${spacingLarge};
+        margin: ${spacingExtraLarge} ${spacingLarge};
       }
       .footer-container {
         display: flex;

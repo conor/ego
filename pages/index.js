@@ -27,6 +27,12 @@ const Index = () => (
       <Travel />
     </Section>
     <Footer />
+
+    <style jsx>{`
+      .app {
+        overflow: hidden;
+      }
+    `}</style>
   </div>
 )
 
