@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "out",
+    "headers": [{
+      "source" : "**/*.@(jpg|jpeg|svg|js|css)",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=365000000, immutable"
+      }]
+    }]
+  }
+}
