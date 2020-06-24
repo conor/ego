@@ -9,10 +9,6 @@ import Section from '../components/Section'
 import Travel from '../components/Travel'
 import Footer from '../components/Footer'
 
-// Google Analytics
-import GA from '../utils/ga'
-GA() // Initialize it
-
 const Index = () => (
   <div className='app'>
     <Header />
