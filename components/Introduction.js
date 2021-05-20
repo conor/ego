@@ -18,13 +18,13 @@ const Introduction = () => (
         {' '}
         <strong>designer/developer</strong>
         {' '}
-        who turn's business idea's into
+        who turns business ideas into
         {' '}
-        <strong>product's</strong>
+        <strong>products</strong>
         {' '}
         &
         {' '}
-        <strong>service's</strong>
+        <strong>services</strong>
       </h1>
     </div>
 
