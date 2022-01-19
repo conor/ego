@@ -66,6 +66,9 @@ const Footer = () => (
         p, img {
           flex-basis: auto;
         }
+        img {
+          max-width: 64px;
+        }
       }
     `}</style>
   </footer>
