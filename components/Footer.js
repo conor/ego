@@ -18,7 +18,7 @@ const Footer = () => (
     data-aos-easing='ease-in-sine'
   >
     <div className='footer-container'>
-      <p>© 2017 CONOR WADE. ALL RIGHTS RESERVED</p>
+      <p>© {new Date().getFullYear()} CONOR WADE. ALL RIGHTS RESERVED</p>
       <img src='/static/mark.svg' alt='Logo for Conor Wade' />
       <p>
         Currently in
