@@ -49,6 +49,7 @@ const Footer = () => (
       img {
         flex-basis: 64px;
         max-width: 64px;
+        margin: 0 auto;
       }
       a {
         color: ${brandBlue};
