@@ -47,7 +47,8 @@ const Footer = () => (
         text-transform: uppercase;
       }
       img {
-        flex-basis: 100%;
+        flex-basis: 64px;
+        max-width: 64px;
       }
       a {
         color: ${brandBlue};
@@ -65,9 +66,6 @@ const Footer = () => (
         }
         p, img {
           flex-basis: auto;
-        }
-        img {
-          max-width: 64px;
         }
       }
     `}</style>
