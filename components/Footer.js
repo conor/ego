@@ -1,31 +1,28 @@
-import React from 'react'
+import React from "react";
 
 // Theme
 import {
   spacingLarge,
   spacingExtraLarge,
-  spacingExtraExtraLarge
-} from '../theme/spacing'
-import { f6, bold } from '../theme/typography'
-import { brandBlue, brandWhite } from '../theme/colors'
-import { largeAndUp } from '../theme/screenSizes'
+  spacingExtraExtraLarge,
+} from "../theme/spacing";
+import { f6, bold } from "../theme/typography";
+import { brandBlue, brandWhite } from "../theme/colors";
+import { largeAndUp } from "../theme/screenSizes";
 
 const Footer = () => (
   <footer
-    data-aos='zoom-out-up'
-    data-aos-once='true'
-    data-aos-delay='200'
-    data-aos-easing='ease-in-sine'
+    data-aos="zoom-out-up"
+    data-aos-once="true"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-sine"
   >
-    <div className='footer-container'>
-      <p>© {new Date().getFullYear()} CONOR WADE. ALL RIGHTS RESERVED</p>
-      <img src='/static/mark.svg' alt='Logo for Conor Wade' />
+    <div className="footer-container">
+      <p>© {new Date().getFullYear()} CONOR WADE. ALL RIGHTS RESERVED.</p>
+      <img src="/static/mark.svg" alt="Logo for Conor Wade" />
       <p>
-        Currently in
-        {' '}
-        <a href='https://www.google.com/search?q=london'>
-          London, England
-        </a>
+        Currently in{" "}
+        <a href="https://www.google.com/search?q=london">London, England</a>
       </p>
     </div>
     <style jsx>{`
@@ -65,12 +62,13 @@ const Footer = () => (
         footer {
           padding: ${spacingExtraExtraLarge} ${spacingExtraLarge};
         }
-        p, img {
+        p,
+        img {
           flex-basis: auto;
         }
       }
     `}</style>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
